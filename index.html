@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Snap</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .interface{
+            height: 100vh;
+            scroll-snap-type: y mandatory; /*obrigatório*/
+            overflow-y: scroll;
+
+        }
+        .interface section{
+            height: 100vh;
+            scroll-snap-align: start;
+            display: flex;
+            position: sticky;
+            top: 0;
+            left: 0;
+        }
+
+        .page1{
+            background-color: red;           
+        }
+
+        .page2{
+            background-color: yellow;
+        }
+
+        .page3{
+            background-color: green;
+        }
+
+        .page4{
+            background-color: blue;
+        }
+
+        .page5{
+            background-color: grey;
+        }
+
+    </style>
+</head>
+<body>
+    <main class="interface">
+        <section class="page1"><h2>Página1</h2></section>
+        <section class="page2"><h2>Página2</h2></section>
+        <section class="page3"><h2>Página3</h2></section>
+        <section class="page4"><h2>Página4</h2></section>
+        <section class="page5"><h2>Página5</h2></section>
+    </main>
+</body>
+</html>
